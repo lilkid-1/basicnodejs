@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 MongoClient.connect('mongodb+srv://<username>:<password>@cluster0-n6ld6.mongodb.net/test?retryWrites=true&w=majority', (err, client) => {
     if (err) return console.log(err)
-    db = client.db('aayush_1220')
+    db = client.db('<username>')
 
     app.listen(3400, () =>{
         console.log('server on 3400')
